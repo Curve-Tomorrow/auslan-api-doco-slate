@@ -1,3 +1,7 @@
+checkout:
+  post:
+    - aws s3 sync s3://auslan-booking-system-doco/source source --exclude ".git/*"
+
 test:
   override:
     - "true"
