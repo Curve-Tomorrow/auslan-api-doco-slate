@@ -1,0 +1,5 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - aws s3 sync build s3://auslan-booking-system-doco --exclude ".git/*"
